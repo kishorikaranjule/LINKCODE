@@ -1,33 +1,22 @@
-/********************************* Swaping of number *************************************************/
-
 #include<stdio.h>
 int main()
 {
-	int n1,n2,n3,temp;
+	int a=10,b=20;
+	int n1,n2;
+	printf("\n %d and %d Befor Swapping ",a,b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("\n %d and %d After Swapping ",a,b);
+	printf("\n__________________________________________________________________________\n");
 	
-	printf("\n Enter 1st number= ");
+	printf("\nEnter 1st number= ");
 	scanf("\n%d",&n1);
-	printf("\n Enter 2nd number= ");
+	printf("\nEnter 2nd number= ");
 	scanf("\n%d",&n2);
-	temp=0;
-	temp=n1;
-	n1=n2;
-	n2=temp;
-	printf("\n After swapping of two numbers");
-	printf("\n 1st number is =%d",n1);
-	printf("\n 2nd number is =%d\n",n2);
-
-    printf("\n *************** Without using 3rd variable *************************\n");
-    
-    printf("\n Enter 1st number= ");
-	scanf("\n%d",&n1);
-	printf("\n Enter 2nd number= ");
-	scanf("\n%d",&n2);
-    n1=n1+n2;
-    n2=n1-n2;
-    n1=n1-n2;
-    printf("\n After swapping of two numbers");
-	printf("\n 1st number is =%d",n1);
-	printf("\n 2nd number is =%d",n2);
-	
+	n1=n1+n2;
+	n2=n1-n2;
+	n1=n1-n2;
+	printf("\n %d and %d After Swapping ",n1,n2);
+	return 0;
 }

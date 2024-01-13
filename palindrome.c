@@ -1,25 +1,27 @@
-/************************************ Palindrome number ***********************************************/
-
 #include<stdio.h>
 int main()
 {
-	int n,temp,r;
-	int sum=0;
-	printf("\n Enter any number: ");
+	int r,n,sum=0,temp;
+	
+	printf("Enter any Number: ");
 	scanf("\n%d",&n);
 	temp=n;
 	while(n>0)
 	{
-		r=n%10;
-		sum=(sum*10)+r;
-		n=n/10;
+			
+        	r=n%10;
+	        sum=(sum*10)+r;
+          	n=n/10;
 	}
+
+	
 	if(temp==sum)
 	{
-		printf("\n Number is palindrome ");
+		printf("Palindrome number ");
 	}
-	else{
-		printf("\n Number is not palindrome ");
+	else
+	{
+		printf("Not palindrome number ");
 	}
 	return 0;
 }
