@@ -1,16 +1,29 @@
-/********************************** ASCII CARACTER *********************************************/
-
 #include<stdio.h>
+
+/*ascii program*/
 
 int main()
 {
-	char c;
-	int i=65;
-	printf("\n Enter character ");
-	scanf("\n %c",&c);
-	for(i=0;i<=90;i++)
+	char ch;
+	printf("\n enter any character: ");
+	scanf("%c",&ch);
+	
+	if((ch>=65)&&(ch<=90))
 	{
-		printf("\n %d",c);
-		break;
+		printf("\n its capital char..",&ch);
 	}
+	else if((ch>=97)&&(ch<=122))
+	{
+		printf("\n its small char..",&ch);
+	}
+	else if((ch>=48)&&(ch<=56))
+	{
+		printf("\n it is a number..",&ch);
+	}
+	else
+	{
+		printf("\n other character..",&ch);
+	}
+	return 0;
 }
+
